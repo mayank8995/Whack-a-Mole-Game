@@ -14,7 +14,7 @@ for (let i in arr) {
     grid.appendChild(elem);
 }
 const squares = [...document.querySelectorAll('.box')];
-let count = 60;
+let count = 30;
 let hitId = -1;
 let result = 0;
 let num = -1;
@@ -62,7 +62,7 @@ function moveMole() {
             imgElem.src = 'mole.jpg';
             square[0].appendChild(imgElem);
         }
-    }, 1000);
+    }, 500);
 }
 function countWhack() {
     let val = document.querySelector('.box img').getAttribute('id');
